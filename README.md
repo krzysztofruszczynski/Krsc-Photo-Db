@@ -9,3 +9,7 @@ In order to import metadata from photos, please use:
 php ImportCommand.php /my/directory/with/photos sql_file.sql
 </pre>
 Where <pre>/my/directory/with/photos</pre> is folder, which is recursively searched for photos and <pre>sql_file.sql</pre> is dynamically generated file with import. If second parameter is omitted, sql data will be displayed in output.
+
+Oracle db
+===========
+In Database/Oracle folder are sql files with database for storing photos. Please change schema name "YOURSCHEMA" to your own needs.
