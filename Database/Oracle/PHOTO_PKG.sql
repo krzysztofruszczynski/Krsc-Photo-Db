@@ -8,8 +8,9 @@
 
     FUNCTION get_fraction(in_mod_exposure FLOAT) RETURN VARCHAR2;
     FUNCTION show_exposure_time(in_exposure FLOAT) RETURN VARCHAR2;
-    FUNCTION load_gps_data_by_date(in_date_start DATE DEFAULT NULL, in_date_finish DATE DEFAULT NULL) RETURN NUMBER;
-    FUNCTION load_gps_data_by_filename(in_filename VARCHAR2, in_clear_previous_records NUMBER DEFAULT 1) RETURN NUMBER;
+    PROCEDURE load_gps_data_by_date(in_date_start IN DATE DEFAULT NULL, in_date_finish IN DATE DEFAULT NULL);
+    PROCEDURE load_gps_data_by_filename(in_filename IN VARCHAR2, in_clear_previous_records IN NUMBER DEFAULT 1);
+    FUNCTION get_gpx_file_content RETURN CLOB;
 END photo_pkg;
 
 /
