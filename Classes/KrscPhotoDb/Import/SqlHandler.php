@@ -6,7 +6,7 @@ namespace KrscPhotoDb\Import;
  */
 class SqlHandler extends AbstractHandler
 {
-    const SQL_TEMPLATE_INSERT_PHOTO = 'INSERT INTO photos (%s) VALUES (%s);';
+    const SQL_TEMPLATE_INSERT_PHOTO = 'INSERT INTO photos_exif (%s) VALUES (%s);';
 
     /**
      * @var string[] created sql queries
@@ -17,8 +17,11 @@ class SqlHandler extends AbstractHandler
     {
         foreach ($this->_mData as $sFilePath => $aFileIntoDb) {
             $aColumns = array_keys($aFileIntoDb);
-            $sColumnsText = '\''.implode('\', \'', $aColumns).'\'';
-            $sValuesText =  '\''.implode('\', \'', $aFileIntoDb).'\'';
+            $sColumnsText = implode(', ', $aColumns);
+            array_walk($aFileIntoDb, function(&$value, &$key) {
+                $value = is_numeric($value) ? $value : '\''.$value.'\'';
+            });
+            $sValuesText = implode(', ', $aFileIntoDb);
             $this->_aSqlQueries[] = sprintf(self::SQL_TEMPLATE_INSERT_PHOTO, $sColumnsText, $sValuesText);
         }
     }
