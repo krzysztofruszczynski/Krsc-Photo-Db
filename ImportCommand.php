@@ -1,6 +1,14 @@
 <?php
 /**
+ * This file is part of Krsc-Photo-Db.
+ *
  * Command for importing data from files.
+ *
+ * @category KrscPhotoDb
+ * @copyright Copyright (c) 2020 Krzysztof Ruszczyński
+ * @license https://www.gnu.org/licenses/gpl-3.0.html GPL
+ * @author Krzysztof Ruszczyński <https://www.ruszczynski.eu>
+ * @version 1.0.0, 2020-03-29
  */
 
 $sSourcePath = 'Classes'.DIRECTORY_SEPARATOR.'KrscPhotoDb'.DIRECTORY_SEPARATOR.'Import'.DIRECTORY_SEPARATOR;

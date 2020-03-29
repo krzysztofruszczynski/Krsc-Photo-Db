@@ -2,7 +2,15 @@
 namespace KrscPhotoDb\Import;
 
 /**
+ * This file is part of Krsc-Photo-Db.
+ *
  * Abstract class for Chain-of-responsibility pattern.
+ *
+ * @category KrscPhotoDb\Import
+ * @copyright Copyright (c) 2020 Krzysztof Ruszczyński
+ * @license https://www.gnu.org/licenses/gpl-3.0.html GPL
+ * @author Krzysztof Ruszczyński <https://www.ruszczynski.eu>
+ * @version 1.0.0, 2020-03-29
  */
 abstract class AbstractHandler
 {

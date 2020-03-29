@@ -5,7 +5,15 @@ namespace KrscPhotoDb\Import;
 ini_set('xdebug.max_nesting_level', 1000);
 
 /**
+ * This file is part of Krsc-Photo-Db.
+ *
  * Class searching recursively for images inside given directory.
+ *
+ * @category KrscPhotoDb\Import
+ * @copyright Copyright (c) 2020 Krzysztof Ruszczyński
+ * @license https://www.gnu.org/licenses/gpl-3.0.html GPL
+ * @author Krzysztof Ruszczyński <https://www.ruszczynski.eu>
+ * @version 1.0.0, 2020-03-29
  */
 class FilesHandler extends AbstractHandler
 {
