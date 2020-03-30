@@ -1,7 +1,7 @@
 {
     "name": "krsc/krsc-photo-db",
     "description": "Krsc-Photo-Db is a tool to import, store in db and analyse exif data from photos. Takes advantage of oracle pl/sql to make calculations on big amount of data.",
-    "keywords": ["exif", "oracle", "PL/SQL", "plsql", "Photos", "gpx", "gps"],
+    "keywords": ["exif", "oracle", "plsql", "Photos", "gpx", "gps"],
     "homepage": "https://github.com/krzysztofruszczynski/Krsc-Photo-Db/blob/master/README.md",
     "license": "GPL-3.0",
     "authors": [
